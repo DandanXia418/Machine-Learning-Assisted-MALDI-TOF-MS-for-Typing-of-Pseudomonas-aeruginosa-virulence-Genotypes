@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maldi-t3ss"
+version = "1.0.0"
+description = "Leakage-safe cross-platform MALDI-TOF prediction of WGS-defined T3SS virulotypes"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = [
+  "numpy==2.4.2",
+  "pandas==2.3.3",
+  "scipy==1.17.1",
+  "scikit-learn==1.8.0",
+  "statsmodels==0.14.6",
+  "PyYAML==6.0.3",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+

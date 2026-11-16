@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+config.yml
+results/
+data/private/
+data/*.npy
+data/*.npz
+data/*.xlsx
+*.log
+.DS_Store
+Thumbs.db
+

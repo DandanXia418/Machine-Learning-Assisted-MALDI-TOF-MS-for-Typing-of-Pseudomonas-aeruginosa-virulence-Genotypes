@@ -1,0 +1,33 @@
+seed: 20261028
+source_center: Autobio
+target_center: Bruker
+columns:
+  isolate_id: isolate_id
+  center: center
+  spectrum_id: spectrum_id
+  collection_date: collection_date
+  exo_u: exoU
+  exo_s: exoS
+  mlst_alleles: [acsA, aroE, guaA, mutL, nuoD, ppsA, trpE]
+paths:
+  metadata: data/metadata.csv
+  spectrum_map: data/spectrum_to_isolate.csv
+  isolate_spectra: data/isolate_median_spectra.npy
+  replicate_spectra: data/replicate_spectra.npy
+  vfdb_presence: data/vfdb_presence.csv
+  mlst: data/mlst.csv
+  core_snp_clusters: data/core_snp_clusters.csv
+  output: results
+analysis:
+  mz_start: 2001
+  expected_grid_length: 17999
+  min_class_per_center: 10
+  primary_min_class_per_center: 15
+  n_splits: 5
+  n_repeats: 2
+  bootstrap_repeats: 4000
+  feature_count: 150
+  reliability_quantile: 0.50
+  svm_c: 3.0
+  core_snp_thresholds: [500, 1000, 2500, 5000, 10000]
+

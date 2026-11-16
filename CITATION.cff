@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated article and the archived repository release."
+title: "Cross-platform MALDI-TOF prediction of Pseudomonas aeruginosa T3SS virulotypes"
+type: software
+authors:
+  - family-names: "To be completed before release"
+version: 1.0.0
+date-released: 2026-11-16
+license: MIT
+
